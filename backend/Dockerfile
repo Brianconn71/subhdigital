@@ -4,8 +4,8 @@ ENV PYTHONBUFFERED=1
 
 WORKDIR /backend
 
-RUN pip install -r requirements.txt
-
 COPY . .
+
+RUN pip install -r requirements.txt
 
 EXPOSE 8000
